@@ -16,7 +16,8 @@
 }
 
 body {
-  margin: 40px 200px;
+  /*margin: 40px 200px;*/
+  padding: 30px 18px;
   font-family: poppinsRegular;
   font-size: 16px;
 }
@@ -31,6 +32,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
+}
+
+header.body_header nav ul {
+  display: none;
 }
 
 ul {
@@ -83,7 +88,7 @@ section {
   text-align: center;
 }
 .header-txt img {
-  width: 600px;
+  width: 100%;
 }
 
 .Busayo-Ella-text p {
@@ -138,7 +143,7 @@ input {
   border: none;
   background-color: transparent;
   border-bottom: 1px solid var(--onion);
-  font-family: poppins;
+  font-family: poppinsRegular;
 }
 
 input:focus {
@@ -186,7 +191,7 @@ footer a {
 }
 
 @media (max-width: 1128px) {
-  body {
+  /*body {
     margin: 5px 30px;
   }
 
@@ -229,5 +234,5 @@ footer a {
     padding: 10px 5px;
     width: 30%;
     margin-top: 10px;
-  }
+  }*/
 }
