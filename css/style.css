@@ -106,11 +106,11 @@ p::after {
 
 .iv-main {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  /*grid-template-columns: repeat(2, 1fr);*/
+  gap: 15px;  
   justify-content: center;
   align-items: center;
-  margin: 0 100px;
+  /*margin: 0 100px;*/
 }
 
 .IV-title {
@@ -130,7 +130,7 @@ span {
 
 form {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /*grid-template-columns: repeat(2, 1fr);*/
   justify-content: center;
   align-items: center;
   padding: 40px 10px;
@@ -144,6 +144,10 @@ input {
   background-color: transparent;
   border-bottom: 1px solid var(--onion);
   font-family: poppinsRegular;
+}
+
+label {
+  cursor: pointer;
 }
 
 input:focus {
