@@ -8,9 +8,16 @@
   --plum: #673147;
   --text: #333333;
 }
+
+@font-face {
+  font-family: poppinsRegular;
+  src: url('../font/poppins/Poppins-Regular.ttf');
+  font-weight: normal;
+}
+
 body {
   margin: 40px 200px;
-  font-family: poppins;
+  font-family: poppinsRegular;
   font-size: 16px;
 }
 
