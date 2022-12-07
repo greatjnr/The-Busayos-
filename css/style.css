@@ -14,7 +14,9 @@
   src: url('../font/poppins/Poppins-Regular.ttf');
   font-weight: normal;
 }
-
+li {
+  list-style: none;
+}
 body {
   /*margin: 40px 200px;*/
   padding: 30px 18px;
@@ -45,20 +47,20 @@ ul {
   align-items: center;
 }
 
-li {
+/*li {
   font-size: 13px;
   letter-spacing: 5px;
   text-transform: uppercase;
 }
-
+*/
 li a {
   text-decoration: none;
   color: var(--text);
 }
 
-li:hover {
+/*li:hover {
   border-bottom: 2px solid var(--plum);
-}
+}*/
 
 button {
   padding: 10px 20px;
@@ -116,7 +118,7 @@ p::after {
 .IV-title {
   background-color: #673147;
   padding: 10px 20px;
-  width: 100%;
+  /*width: 100%;*/
   color: #fff;
   z-index: -1;
   text-align: right;
@@ -128,8 +130,21 @@ span {
   color: var(--plum);
 }
 
-form {
-  display: grid;
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form form > li {
+  display: flex;
+  flex-direction: column;
+}
+
+.form form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   /*grid-template-columns: repeat(2, 1fr);*/
   justify-content: center;
   align-items: center;
@@ -137,10 +152,31 @@ form {
   background-color: rgb(236, 236, 236);
 }
 
-input {
-  margin: 20px;
+.form form .form_row {
+  padding: 0 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form .form_row .field {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+}
+.form form .form_row .radio_field {
+  flex-direction: column;
+}
+.form form .form_row .radio_field input {
+  margin-right: 5px;
+}
+input:not(input[type="radio"]) {
+  margin: 20px 0;
   padding: 20px;
   border: none;
+  width: 100%;
   background-color: transparent;
   border-bottom: 1px solid var(--onion);
   font-family: poppinsRegular;
@@ -192,6 +228,29 @@ footer a {
   text-align: center;
   color: #333333;
   text-decoration: none;
+}
+
+@media (min-width: 524px) {
+  .form form .form_row {
+    flex-direction: row;
+  }
+  .form form .form_row .field:first-child {
+    margin-right: 10px;
+  }
+}
+
+@media (min-width: 680px) {
+  .header-txt img {
+    width: 300px;
+  }
+  .form {
+    width: 600px;
+    margin: 0 auto;
+
+  }
+  .iv-main {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 1128px) {

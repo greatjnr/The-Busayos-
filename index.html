@@ -59,34 +59,44 @@
     <section class="form">
       <h3>Book a Reservation</h3>
       <form action="">
-        <input type="text" name="" placeholder="Your Name" />
-        <input type="number" name="" placeholder="Phone Number" />
-        <input type="text" name="" placeholder="Your Email" />
-        <input
-          type="text"
-          name=""
-          placeholder="Are You cominng alone"
-          list="query"
-        />
-        <legend>
-          <fieldset id="checker">
-            <input type="radio" value="what do u want?" id="checker-1" name="checker" />
-            <label for="checker-1">what do You want?</label>
-            <input type="radio" value="what do u want?" id="checker-2" name="checker" />
-            <label for="checker-2">what do u want?</label>
-          </fieldset>
-        </legend>
+        <div class="form_row">
+          <div class="field"><input type="text" name="" placeholder="Your Name" /></div>
+          <div class="field"><input type="number" name="" placeholder="Phone Number" /></div>
+        </div>
+        <div class="form_row">
+          <div class="field"><input type="text" name="" placeholder="Your Email" /></div>
+          <div class="field"><input
+            type="text"
+            name=""
+            placeholder="Are You cominng alone"
+            list="query"
+          /></div>
+        </div>
+        <div class="form_row" id="checker">
+          <div class="field radio_field">
+            <li>
+              <input type="radio" value="what do u want?" id="checker-1" name="checker" />
+              <label for="checker-1">what do You want?</label>
+            </li>
+            <li>
+              <input type="radio" value="what do u want?" id="checker-2" name="checker" />
+              <label for="checker-2">what do u want?</label>
+            </li>
+          </div>
 
-        <input
-          type="text"
-          name=""
-          placeholder="Will You like us to book a room for you?"
-          list="query-2"
-        />
-        <datalist id="query-2">
-          <option>No, i ill do it myself</option>
-          <option>YES, Please help me</option>
-        </datalist>
+          <div class="field">
+            <input
+              type="text"
+              name=""
+              placeholder="Will You like us to book a room for you?"
+              list="query-2"
+            />
+            <datalist id="query-2">
+              <option>No, i ill do it myself</option>
+              <option>YES, Please help me</option>
+            </datalist>
+          </div>
+        </div>
         <button type="submit" class="btn-submit">Submit</button>
       </form>
     </section>
