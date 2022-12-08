@@ -66,6 +66,7 @@ nav .booking a {
   background: #fff;
   border-radius: 10px;
   gap: 0;
+  width: 180px;
   z-index: 999;
   transition: .7s ease all;
   opacity: 0;
