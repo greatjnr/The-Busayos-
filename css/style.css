@@ -133,7 +133,9 @@ section {
   margin: 100px 0;
 }
 .wrapper {
-
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
 
 .Busayo-Ella-text {
@@ -329,17 +331,18 @@ footer a {
   .menu_large {
     display: block;
   }
+  .header-txt img {
+    width: 300px;
+  }
 
 }
 
 @media (min-width: 880px) {
-  .header-txt img {
-    width: 300px;
+  .wrapper {
+    width: 811px;
   }
-  .form {
-    width: 665px;
-    margin: 0 auto;
-  }
+  
+  
   .iv-main {
     grid-template-columns: repeat(2, 1fr);
   }
