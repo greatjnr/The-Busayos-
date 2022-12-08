@@ -14,13 +14,21 @@
         <div class="logo">
           <img src="./img/logo.png" alt="logo" />
         </div>
-        <div>
-          <div class="menu_icon"><img src="./img/menu-icon.svg"></div>
+        <div class="menu_large">
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Book Reservation</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li class="booking"><a href="/booking">Book Reservation</a></li>
+          </ul>
+        </div>
+        <div class="menu_mobile">
+          <div class="menu_icon" id="menu_icon" data-open="false"><img src="./img/menu-icon.svg"></div>
+          <ul id="menu_items">
+            <li><a href="#">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li class="booking"><a href="/booking">Book Reservation</a></li>
           </ul>
         </div>
       </nav>
