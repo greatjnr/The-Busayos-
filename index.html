@@ -5,33 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta type="data" keywords=" Ella and Busayo are getting married" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Busayo & Ella</title>
   </head>
   <body>
     <header class="body_header">
       <nav>
         <div class="logo">
-          <img src="img/logo.png" alt="logo" />
+          <img src="./img/logo.png" alt="logo" />
         </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <button class="btn">Book Reservation</button>
-        </ul>
+        <div>
+          <div class="menu_icon"><img src="./img/menu-icon.svg"></div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Book Reservation</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-    <section class="hero-vid">
+    <section class="hero-vid wrapper">
       <video autoplay loop muted plays-inline class="video" width="100%">
-        <source src="img/video (1).mp4" />
+        <source src="./img/video (1).mp4" />
       </video>
     </section>
 
-    <section class="Busayo-Ella-text">
+    <section class="Busayo-Ella-text wrapper">
       <div class="header-txt">
-        <img src="img/Asset 3@4x.png" alt="Busayo and Ella" />
+        <img src="./img/Asset 3@4x.png" alt="Busayo and Ella" />
       </div>
       <p class="body-txt">
         It’s our earnest to invite you to our wedding, this is the day we have
@@ -56,24 +59,31 @@
       </div>
     </section>
 
-    <section class="form">
+    <section class="form wrapper">
       <h3>Book a Reservation</h3>
-      <form action="">
+      <form action="" id="form_raw">
         <div class="form_row">
-          <div class="field"><input type="text" name="" placeholder="Your Name" /></div>
-          <div class="field"><input type="number" name="" placeholder="Phone Number" /></div>
+          <div class="field"><input type="text" name="name" placeholder="Your Name" /></div>
+          <div class="field"><input type="number" name="phone_no" placeholder="Phone Number" /></div>
         </div>
         <div class="form_row">
-          <div class="field"><input type="text" name="" placeholder="Your Email" /></div>
-          <div class="field"><input
-            type="text"
-            name=""
-            placeholder="Are You cominng alone"
-            list="query"
-          /></div>
+          <div class="field"><input type="text" name="email" placeholder="Your Email" /></div>
+          <div class="field">
+            <label>Are You coming alone?</label>
+            <div class="field_wrap">
+              <li>
+                <input type="radio" name="participant_no" id="alone">
+                <label for="alone">Definitely</label>
+              </li>
+              <li>
+                <input type="radio" name="participant_no" id="many">
+                <label for="many">Coming with +1</label>
+              </li>
+            </div>
+          </div>
         </div>
         <div class="form_row" id="checker">
-          <div class="field radio_field">
+          <!-- <div class="field radio_field">
             <li>
               <input type="radio" value="what do u want?" id="checker-1" name="checker" />
               <label for="checker-1">what do You want?</label>
@@ -82,26 +92,59 @@
               <input type="radio" value="what do u want?" id="checker-2" name="checker" />
               <label for="checker-2">what do u want?</label>
             </li>
+          </div> -->
+
+          <div class="field">
+            <label>Will You like us to book a room for you?</label>
+            <div class="field_wrap">
+              <li>
+                <input type="radio" name="booking_choice" id="myself">
+                <label for="myself">No, I'll do it myself</label>
+              </li>
+              <li>
+                <input type="radio" name="booking_choice" id="help">
+                <label for="help">YES, Please help me</label>
+              </li>
+            </div>
           </div>
 
           <div class="field">
-            <input
-              type="text"
-              name=""
-              placeholder="Will You like us to book a room for you?"
-              list="query-2"
-            />
-            <datalist id="query-2">
-              <option>No, i ill do it myself</option>
-              <option>YES, Please help me</option>
-            </datalist>
+            <label>If Yes, please select one of these rooms</label>
+            <div class="field_wrap">
+              <select name="hotel_select">
+                <option value="-Select-">Select</option>
+                <option value="opt1">Onion Hotel (N11,000)</option>
+                <option value="opt2">The Hampshire (N14,250)</option>
+                <option value="opt3">Tasonat Hotel(N12,300)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form_row">
+          <div class="field payment_choice_options" id="payment_choice_options">
+            <li>
+              <input type="radio" name="payment_choice" id="payment_choice1">
+              <label for="payment_choice1">I will pay when I arrive</label>
+            </li>
+            <li>
+              <input type="radio" name="payment_choice" id="payment_choice2">
+              <label for="payment_choice2">I will rather pay now</label>
+            </li>
+          </div>
+         
+        </div>
+        <div class="form_row">
+          <div class="field account_details" id="account_details">
+            <p>Pay to this account: Oluwabusayo Obisean</p>
           </div>
         </div>
         <button type="submit" class="btn-submit">Submit</button>
       </form>
     </section>
-    <footer class="footer-main">
+    <footer class="footer-main wrapper">
       Built <a href="#"> by Wave 8 Technologies</a>
     </footer>
   </body>
+  <script type="text/javascript" src="./js/script.js"></script>
 </html>
