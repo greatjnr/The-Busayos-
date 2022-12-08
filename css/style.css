@@ -37,7 +37,12 @@ nav {
 }
 
 header.body_header nav ul {
-  display: none;
+  display: none; 
+}
+
+.menu_icon img {
+  width: 20px;
+  cursor: pointer;
 }
 
 ul {
@@ -79,6 +84,9 @@ button {
 
 section {
   margin: 100px 0;
+}
+.wrapper {
+
 }
 
 .Busayo-Ella-text {
@@ -163,8 +171,10 @@ span {
 
 .form form .form_row .field {
   width: 100%;
-  padding: 0 10px;
+  padding: 0 25px;
   display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
 .form form .form_row .radio_field {
   flex-direction: column;
@@ -173,15 +183,27 @@ span {
   margin-right: 5px;
 }
 input:not(input[type="radio"]) {
-  margin: 20px 0;
+  /*margin: 20px 0;*/
   padding: 20px;
   border: none;
-  width: 100%;
   background-color: transparent;
   border-bottom: 1px solid var(--onion);
   font-family: poppinsRegular;
 }
 
+.form form .form_row .payment_choice_options.field {
+  flex-direction: column;
+}
+.form form .form_row .payment_choice_options.field li:first-child {
+  margin-right: 25px;
+}
+select {
+  border: none;
+  padding: 7px;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+}
 label {
   cursor: pointer;
 }
@@ -191,11 +213,16 @@ input:focus {
   background-color: transparent;
 }
 
+.form_row #account_details {
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s ease all;
+}
 .btn-submit {
   padding: 20px 5px;
   color: #fff;
   cursor: pointer;
-  width: 50%;
+  width: 100%;
   font-weight: 600;
   font-size: 1.5rem;
   border-radius: 2px;
@@ -230,6 +257,12 @@ footer a {
   text-decoration: none;
 }
 
+@media (min-width: 395px) {
+  .btn-submit {
+    width: 300px;
+  }
+}
+
 @media (min-width: 524px) {
   .form form .form_row {
     flex-direction: row;
@@ -237,14 +270,17 @@ footer a {
   .form form .form_row .field:first-child {
     margin-right: 10px;
   }
+  .form form .form_row .payment_choice_options.field {
+    flex-direction: row;
+  }
 }
 
-@media (min-width: 680px) {
+@media (min-width: 880px) {
   .header-txt img {
     width: 300px;
   }
   .form {
-    width: 600px;
+    width: 665px;
     margin: 0 auto;
 
   }
