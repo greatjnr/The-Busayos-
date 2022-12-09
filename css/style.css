@@ -156,13 +156,13 @@ section {
   font-weight: 500;
 }
 
-p::after {
+/**p::after {
   content: "";
   width: 50%;
   height: 20px;
   background-color: var(--plum);
   position: relative;
-}
+}**/
 
 .iv-main {
   display: grid;
