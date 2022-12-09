@@ -233,6 +233,9 @@ section {
 .form form .form_row .radio_field input {
   margin-right: 5px;
 }
+.form form label { 
+   font-size: 16px;
+}
 input:not(input[type="radio"]) {
   /*margin: 20px 0;*/
   padding: 20px;
