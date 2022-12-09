@@ -172,18 +172,17 @@ section {
   align-items: center;
   /*margin: 0 100px;*/
 }
-.iv-main p, .iv-main h2 {
-  text-align: center;
-}
+
 .IV-title {
   background-color: #673147;
   padding: 10px 20px;
   /*width: 100%;*/
   color: #fff;
   z-index: -1;
-  text-align: right;
+  text-align: center;
   padding: 40px 10px;
 }
+.iv-main .IV-details {text-align: center;}
 
 .iv-main .IV-details span {
   font-weight: 600;
@@ -348,8 +347,9 @@ footer a {
   .iv-main {
     grid-template-columns: repeat(2, 1fr);
   }
-  .iv-main p, .iv-main h2 {
-    text-align: initial;
+  .IV-title {text-align: right;}
+  .iv-main .IV-details {
+    text-align: left;
   }
 }
 
