@@ -185,7 +185,7 @@ section {
   padding: 40px 10px;
 }
 
-span {
+.iv-main .IV-details span {
   font-weight: 600;
   color: var(--plum);
 }
