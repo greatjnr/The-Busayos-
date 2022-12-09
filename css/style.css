@@ -172,7 +172,9 @@ p::after {
   align-items: center;
   /*margin: 0 100px;*/
 }
-
+.iv-main p, .iv-main h2 {
+  text-align: center;
+}
 .IV-title {
   background-color: #673147;
   padding: 10px 20px;
