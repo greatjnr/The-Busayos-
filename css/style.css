@@ -345,9 +345,11 @@ footer a {
     width: 811px;
   }
   
-  
   .iv-main {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .iv-main p, .iv-main h2 {
+    text-align: initial;
   }
 }
 
